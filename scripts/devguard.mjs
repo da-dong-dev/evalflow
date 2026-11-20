@@ -82,6 +82,9 @@ const CONFIG = {
     5180: 'baby-ai 前端',
     8010: 'baby-ai 后端',
     8011: 'baby-ai 精排 (BGE)',
+    5190: 'ecom-agent 前端',
+    8090: 'ecom-agent 后端',
+    8091: 'ecom-agent 评测',
   },
 };
 

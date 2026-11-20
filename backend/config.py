@@ -39,7 +39,7 @@ class Settings(BaseSettings):
     babyai_timeout: int = 120                       # baby-ai 单次问答超时(秒);它要跑检索+精排+生成,给足
     babyai_max_rpm: int = 8                         # 自我限流:每分钟最多打多少次(被测系统是 10/min,留余量)
     # Ch07 对接 ecom-agent：它提供非流式 /api/eval/chat + /api/meta
-    ecom_base_url: str = "http://127.0.0.1:8081"
+    ecom_base_url: str = "http://127.0.0.1:8091"
     ecom_timeout: int = 120
     ecom_max_rpm: int = 30
     # —— Ch30 裁判独立配置 ——
