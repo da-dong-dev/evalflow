@@ -21,6 +21,9 @@ RUN pip install --no-cache-dir \
 COPY backend ./backend
 COPY alembic.ini ./alembic.ini
 COPY migrations ./migrations
+# 评测集导入与运维脚本（一次性任务用，不参与服务启动）
+COPY scripts ./scripts
+COPY datasets ./datasets
 
 # 非 root 运行(Ch14 交付加固):建独立用户,数据目录归它所有;命名卷首次挂载会继承这里的属主
 RUN useradd --create-home --uid 1000 evalflow \
