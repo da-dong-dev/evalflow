@@ -45,6 +45,18 @@ docker-compose.yml
 4. `docker-compose.yml` + `.env.example` 补 docker 相关变量。
 5. nginx 配置:`/api` 反代到 backend,`/` 服务静态。
 
+## 生产加固（2026-11-23）
+
+部署到公网、且与另外两个项目共用一台 `4C8G` 机器后，补充三条约束：
+
+| 约束 | 做法 | 原因 |
+|---|---|---|
+| 资源隔离 | 每个服务设 `mem_limit`（chroma 1g / backend 1g / worker 1536m / redis 256m / frontend 128m） | 单服务内存失控会触发整机 OOM，连带其他项目 |
+| 日志轮转 | `x-logging` 锚点统一 `json-file`，`max-size=10m` / `max-file=3` | 不轮转的容器日志会写满 120G 磁盘 |
+| 端口最小暴露 | frontend 绑定 `127.0.0.1`，公网只经 Caddy 443 | 防止绕过 HTTPS、`X-Forwarded-For` 与边缘访问规则 |
+
+`mem_limit` 是上限而非预留，不改变本地 dev 的启动方式。
+
 ## 本章不做
 
 - K8s / 云平台部署。

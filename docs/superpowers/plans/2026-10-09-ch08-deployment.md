@@ -61,6 +61,16 @@ _client = _make_client()  # 测试仍可 monkeypatch 这个变量
 | ChromaDB/SQLite 持久化到命名卷 | Task 4 |
 | 不破坏本地 dev / 测试 | Task 1(按环境切换) + Task 5 |
 
+## 生产加固（2026-11-23，部署到公网后补）
+
+单机 `4C8G` 同时跑 evalflow / baby-ai / ecom-agent，需要防止一个项目拖垮全部：
+
+- [x] 每个服务加 `mem_limit`：chroma 1g、backend 1g、worker 1536m、redis 256m、frontend 128m、postgres 512m；
+- [x] 统一 `x-logging` 锚点：`json-file` + `max-size=10m` + `max-file=3`，避免日志写满磁盘；
+- [x] frontend 端口改绑 `127.0.0.1`：公网流量统一走 Caddy，防止直连绕过 HTTPS / 代理头。
+
+> 服务器上的 `docker-compose.override.yml` 也要同步改端口绑定（该文件不进仓库）。
+
 ## 本章不做
 
 - K8s / 云部署、CI/CD、HTTPS / 生产级加固、Ollama 容器化(spec 已明确)。
