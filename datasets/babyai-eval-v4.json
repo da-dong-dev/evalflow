@@ -1,0 +1,293 @@
+{
+  "name": "baby-ai 端到端 v4",
+  "description": "合并 v3（19 条）与 test_questions（24 条）并去重，另加 5 条库外题",
+  "source": "evalflow/datasets/babyai-e2e-v3.json + baby-ai/scripts/test_questions.json",
+  "exported_at": "2026-11-25",
+  "dataset_hash": "b709278060fb36cd0941ad1625640d71",
+  "item_count": 47,
+  "hash_note": "hash 覆盖 (input, expected_output, bucket)，与 backend.snapshot.content_hash 一致",
+  "items": [
+    {
+      "index": 1,
+      "input": "宝宝发烧38度怎么办",
+      "expected_output": "物理降温/退烧药/就医",
+      "bucket": "护理"
+    },
+    {
+      "index": 2,
+      "input": "宝宝拉肚子怎么办",
+      "expected_output": "补液/脱水/就医",
+      "bucket": "护理"
+    },
+    {
+      "index": 3,
+      "input": "宝宝咳嗽有痰怎么办",
+      "expected_output": "化痰/就医/护理",
+      "bucket": "护理"
+    },
+    {
+      "index": 4,
+      "input": "宝宝便秘怎么办",
+      "expected_output": "按摩/纤维/就医",
+      "bucket": "护理"
+    },
+    {
+      "index": 5,
+      "input": "宝宝吐奶怎么办",
+      "expected_output": "奶嗝/竖起来/生理性",
+      "bucket": "喂养"
+    },
+    {
+      "index": 6,
+      "input": "6个月宝宝能加辅食吗",
+      "expected_output": "6个月/铁米粉/菜泥",
+      "bucket": "喂养"
+    },
+    {
+      "index": 7,
+      "input": "宝宝湿疹怎么护理",
+      "expected_output": "保湿/润肤霜/水温",
+      "bucket": "皮肤"
+    },
+    {
+      "index": 8,
+      "input": "宝宝红屁屁怎么办",
+      "expected_output": "勤换/氧化锌/干燥",
+      "bucket": "皮肤"
+    },
+    {
+      "index": 9,
+      "input": "疫苗后发烧怎么办",
+      "expected_output": "观察/38.5度/就医",
+      "bucket": "疫苗"
+    },
+    {
+      "index": 10,
+      "input": "娃夜里老闹腾不睡觉咋办",
+      "expected_output": "出牙/睡眠倒退/环境",
+      "bucket": "睡眠"
+    },
+    {
+      "index": 11,
+      "input": "小宝宝身上起红点点是啥",
+      "expected_output": "湿疹/痱子/皮肤科",
+      "bucket": "皮肤-开放"
+    },
+    {
+      "index": 12,
+      "input": "孩子打完针发烧了要紧吗",
+      "expected_output": "正常反应/38.5度/就医",
+      "bucket": "疫苗"
+    },
+    {
+      "index": 13,
+      "input": "母乳宝宝大便稀稀的正常不",
+      "expected_output": "正常/体重/母乳",
+      "bucket": "排便"
+    },
+    {
+      "index": 14,
+      "input": "宝宝半夜突然哭醒哄不好",
+      "expected_output": "肠绞痛/出牙/就医",
+      "bucket": "睡眠"
+    },
+    {
+      "index": 15,
+      "input": "九个多月还不会爬正常吗",
+      "expected_output": "个体差异/发育/就医",
+      "bucket": "发育"
+    },
+    {
+      "index": 16,
+      "input": "如何给汽车换轮胎",
+      "expected_output": "",
+      "bucket": "库外"
+    },
+    {
+      "index": 17,
+      "input": "推荐几个北京的旅游景点",
+      "expected_output": "",
+      "bucket": "库外"
+    },
+    {
+      "index": 18,
+      "input": "怎么用 Python 写爬虫",
+      "expected_output": "",
+      "bucket": "库外"
+    },
+    {
+      "index": 19,
+      "input": "股票怎么开户",
+      "expected_output": "",
+      "bucket": "库外"
+    },
+    {
+      "index": 20,
+      "input": "宝宝发烧38.5度需要吃退烧药吗",
+      "expected_output": "体温阈值38.5/退烧药使用条件/精神状态优先于体温",
+      "bucket": "护理"
+    },
+    {
+      "index": 21,
+      "input": "对乙酰氨基酚三个月宝宝怎么吃",
+      "expected_output": "按体重计算剂量/间隔至少4小时/3月龄以上可用",
+      "bucket": "护理"
+    },
+    {
+      "index": 22,
+      "input": "宝宝腹泻拉肚子吃什么药",
+      "expected_output": "口服补液盐优先/蒙脱石散用法/脱水征象判断",
+      "bucket": "护理"
+    },
+    {
+      "index": 23,
+      "input": "六个月宝宝不吃辅食不爱吃奶怎么办",
+      "expected_output": "厌奶期是正常阶段/辅食引入顺序/分月龄喂养建议",
+      "bucket": "喂养"
+    },
+    {
+      "index": 24,
+      "input": "宝宝辅食可以加盐吗",
+      "expected_output": "1岁以内不加盐/肾脏发育不成熟/天然调味替代",
+      "bucket": "喂养"
+    },
+    {
+      "index": 25,
+      "input": "母乳宝宝一天喝多少奶量正常",
+      "expected_output": "按体重估算奶量/观察尿量判断饱足/按需喂养原则",
+      "bucket": "喂养"
+    },
+    {
+      "index": 26,
+      "input": "宝宝晚上频繁夜醒不睡觉怎么回事",
+      "expected_output": "分月龄睡眠时长参考/睡眠倒退期/温和睡眠训练",
+      "bucket": "睡眠"
+    },
+    {
+      "index": 27,
+      "input": "新生儿白天睡晚上不睡昼夜颠倒怎么办",
+      "expected_output": "白天多接触光线/晚上保持安静昏暗/建立睡前仪式",
+      "bucket": "睡眠"
+    },
+    {
+      "index": 28,
+      "input": "宝宝一放下就醒落地醒怎么办",
+      "expected_output": "先放脚再放头/等深度睡眠再放/襁褓增加安全感",
+      "bucket": "睡眠"
+    },
+    {
+      "index": 29,
+      "input": "宝宝九个月还不会爬正常吗",
+      "expected_output": "爬行里程碑区间7-10月/每个宝宝节奏不同/创造爬行机会",
+      "bucket": "发育"
+    },
+    {
+      "index": 30,
+      "input": "宝宝一岁了还不会走路怎么办",
+      "expected_output": "走路里程碑区间10-18月/个体差异正常/提供安全练习环境",
+      "bucket": "发育"
+    },
+    {
+      "index": 31,
+      "input": "宝宝囟门什么时候闭合正常",
+      "expected_output": "前囟12-18月闭合/后囟2-3月闭合/闭合过早晚都需评估",
+      "bucket": "发育"
+    },
+    {
+      "index": 32,
+      "input": "宝宝突然抽搐翻白眼怎么办",
+      "expected_output": "平躺侧头防窒息/不往嘴里塞东西/记录抽搐时长",
+      "bucket": "急救"
+    },
+    {
+      "index": 33,
+      "input": "宝宝从床上摔下来磕到头怎么处理",
+      "expected_output": "先观察10秒再动/判断意识是否清醒/观察呕吐嗜睡信号",
+      "bucket": "急救"
+    },
+    {
+      "index": 34,
+      "input": "宝宝烫伤后第一时间应该怎么做",
+      "expected_output": "流动冷水冲15分钟以上/冲水时脱衣物/不要涂牙膏酱油",
+      "bucket": "急救"
+    },
+    {
+      "index": 35,
+      "input": "宝宝打完麻腮风疫苗第八天发烧正常吗",
+      "expected_output": "麻腮风7-12天发热是正常反应/区分正常反应和异常/不要因此推迟后续接种",
+      "bucket": "疫苗"
+    },
+    {
+      "index": 36,
+      "input": "宝宝打疫苗后胳膊红肿怎么办",
+      "expected_output": "局部反应正常/冷敷缓解/一般24-48小时消退",
+      "bucket": "疫苗"
+    },
+    {
+      "index": 37,
+      "input": "自费疫苗有必要打吗",
+      "expected_output": "自费疫苗同样重要/13价肺炎和轮状病毒推荐/根据流行病学选择",
+      "bucket": "疫苗"
+    },
+    {
+      "index": 38,
+      "input": "宝宝洗澡水温多少度合适",
+      "expected_output": "水温37-38℃/室温24-26℃/洗澡时长5-10分钟",
+      "bucket": "日常护理"
+    },
+    {
+      "index": 39,
+      "input": "宝宝红屁股怎么护理",
+      "expected_output": "勤换尿不湿/清水冲洗不擦拭/涂护臀膏隔绝",
+      "bucket": "日常护理"
+    },
+    {
+      "index": 40,
+      "input": "宝宝脐带还没掉怎么护理",
+      "expected_output": "75%酒精棉签从内向外/保持干燥/不要强行撕扯",
+      "bucket": "日常护理"
+    },
+    {
+      "index": 41,
+      "input": "宝宝指甲上有白点是怎么回事",
+      "expected_output": "多数是正常现象/可能是轻微外伤/不代表缺钙缺锌",
+      "bucket": "综合"
+    },
+    {
+      "index": 42,
+      "input": "宝宝眼屎多是什么原因",
+      "expected_output": "鼻泪管堵塞常见/温水棉球从内向外擦/按摩内眼角",
+      "bucket": "综合"
+    },
+    {
+      "index": 43,
+      "input": "帮我写一段 Python 快速排序代码",
+      "expected_output": "无法回答/超出育儿范围/建议咨询",
+      "bucket": "库外"
+    },
+    {
+      "index": 44,
+      "input": "今天北京天气怎么样",
+      "expected_output": "无法回答/超出育儿范围/建议咨询",
+      "bucket": "库外"
+    },
+    {
+      "index": 45,
+      "input": "推荐一部好看的科幻电影",
+      "expected_output": "无法回答/超出育儿范围/建议咨询",
+      "bucket": "库外"
+    },
+    {
+      "index": 46,
+      "input": "怎么用 Excel 做数据透视表",
+      "expected_output": "无法回答/超出育儿范围/建议咨询",
+      "bucket": "库外"
+    },
+    {
+      "index": 47,
+      "input": "帮我翻译这段英文合同",
+      "expected_output": "无法回答/超出育儿范围/建议咨询",
+      "bucket": "库外"
+    }
+  ]
+}
