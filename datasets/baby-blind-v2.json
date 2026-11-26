@@ -1,0 +1,161 @@
+{
+  "name": "baby-ai 盲测 v2",
+  "description": "25 条新主题，避开 v1 的 16 个主题、test_questions 24 条与 v3 19 条；用于评估补库后的泛化。",
+  "source": "参考儿科常见主题手写，expected_output 为标准育儿要点",
+  "exported_at": "2026-11-26",
+  "dataset_hash": "f7b2c64f2e985e42066caf7e48e4eb93",
+  "item_count": 25,
+  "hash_note": "hash 覆盖 (input, expected_output, bucket)，与 backend.snapshot.content_hash 一致",
+  "items": [
+    {
+      "index": 1,
+      "input": "宝宝持续高烧好几天，眼睛红、舌头像草莓，是什么病",
+      "expected_output": "川崎病/就医/心脏",
+      "bucket": "疾病"
+    },
+    {
+      "index": 2,
+      "input": "孩子反复喘息，晚上咳嗽厉害怎么办",
+      "expected_output": "哮喘/雾化/就医/过敏原",
+      "bucket": "疾病"
+    },
+    {
+      "index": 3,
+      "input": "宝宝身上突然起一片片风团，很痒",
+      "expected_output": "荨麻疹/抗过敏/就医",
+      "bucket": "皮肤"
+    },
+    {
+      "index": 4,
+      "input": "宝宝嘴里有白色斑膜，擦不掉",
+      "expected_output": "鹅口疮/就医/制霉菌素",
+      "bucket": "疾病"
+    },
+    {
+      "index": 5,
+      "input": "宝宝屁股红了一片，怎么护理",
+      "expected_output": "勤换/护臀霜/保持干燥",
+      "bucket": "日常护理"
+    },
+    {
+      "index": 6,
+      "input": "宝宝每天傍晚固定哭闹，怎么哄都不行",
+      "expected_output": "肠绞痛/排气操/就医",
+      "bucket": "喂养"
+    },
+    {
+      "index": 7,
+      "input": "宝宝喝奶后拉肚子，是不是乳糖不耐受",
+      "expected_output": "乳糖不耐受/无乳糖奶粉/就医",
+      "bucket": "喂养"
+    },
+    {
+      "index": 8,
+      "input": "宝宝对牛奶蛋白过敏，奶粉怎么选",
+      "expected_output": "深度水解/回避/就医",
+      "bucket": "喂养"
+    },
+    {
+      "index": 9,
+      "input": "孩子看东西总眯眼，是弱视吗",
+      "expected_output": "弱视/筛查/就医",
+      "bucket": "眼科"
+    },
+    {
+      "index": 10,
+      "input": "孩子眼睛有点斜，需要矫正吗",
+      "expected_output": "斜视/就医/矫正",
+      "bucket": "眼科"
+    },
+    {
+      "index": 11,
+      "input": "宝宝牙齿有黑点，是蛀牙吗",
+      "expected_output": "龋齿/刷牙/就医",
+      "bucket": "日常护理"
+    },
+    {
+      "index": 12,
+      "input": "窝沟封闭几岁做比较合适",
+      "expected_output": "窝沟封闭/六龄齿/就医",
+      "bucket": "日常护理"
+    },
+    {
+      "index": 13,
+      "input": "孩子上课坐不住、注意力差，是多动症吗",
+      "expected_output": "多动症/就医评估/行为干预",
+      "bucket": "发育"
+    },
+    {
+      "index": 14,
+      "input": "孩子总是不自主眨眼、清嗓子，怎么回事",
+      "expected_output": "抽动症/不责骂/就医",
+      "bucket": "发育"
+    },
+    {
+      "index": 15,
+      "input": "宝宝两岁还不会说几个词，正常吗",
+      "expected_output": "语言发育迟缓/筛查/就医",
+      "bucket": "发育"
+    },
+    {
+      "index": 16,
+      "input": "女孩八岁前乳房发育，是性早熟吗",
+      "expected_output": "性早熟/就医/骨龄",
+      "bucket": "发育"
+    },
+    {
+      "index": 17,
+      "input": "孩子比同龄人矮很多，需要查什么",
+      "expected_output": "矮小症/生长曲线/就医",
+      "bucket": "发育"
+    },
+    {
+      "index": 18,
+      "input": "宝宝每天需要补多少维生素D",
+      "expected_output": "400IU/遵医嘱/维生素D",
+      "bucket": "喂养"
+    },
+    {
+      "index": 19,
+      "input": "益生菌需要天天吃吗",
+      "expected_output": "不滥用/特定情况/遵医嘱",
+      "bucket": "喂养"
+    },
+    {
+      "index": 20,
+      "input": "宝宝贫血吃铁剂要注意什么",
+      "expected_output": "遵医嘱/维生素C/两餐间",
+      "bucket": "喂养"
+    },
+    {
+      "index": 21,
+      "input": "如何炒股",
+      "expected_output": "无法回答/超出育儿范围",
+      "bucket": "库外"
+    },
+    {
+      "index": 22,
+      "input": "推荐一台笔记本电脑",
+      "expected_output": "无法回答/超出育儿范围",
+      "bucket": "库外"
+    },
+    {
+      "index": 23,
+      "input": "怎么写小说",
+      "expected_output": "无法回答/超出育儿范围",
+      "bucket": "库外"
+    },
+    {
+      "index": 24,
+      "input": "学吉他难吗",
+      "expected_output": "无法回答/超出育儿范围",
+      "bucket": "库外"
+    },
+    {
+      "index": 25,
+      "input": "装修预算怎么控制",
+      "expected_output": "无法回答/超出育儿范围",
+      "bucket": "库外"
+    }
+  ]
+}
