@@ -1,0 +1,161 @@
+{
+  "name": "baby-ai 盲测 v3",
+  "description": "25 条新题，避开 v1/v2 已用主题、test_questions 24 条调参题，以及 2026-11-27 第二轮补库的 13 个主题；用于验证第二轮补库后的泛化。",
+  "source": "参考儿科常见主题手写，expected_output 为标准育儿要点",
+  "exported_at": "2026-11-27",
+  "dataset_hash": "448556334ac16912594b3e67f6b4f99e",
+  "item_count": 25,
+  "hash_note": "hash 覆盖 (input, expected_output, bucket)，与 backend.snapshot.content_hash 一致",
+  "items": [
+    {
+      "index": 1,
+      "input": "宝宝查出肺炎，在家护理要注意什么",
+      "expected_output": "肺炎/遵医嘱/复诊",
+      "bucket": "疾病"
+    },
+    {
+      "index": 2,
+      "input": "宝宝大腿根鼓出一个包，哭的时候更明显",
+      "expected_output": "疝气/嵌顿/就医",
+      "bucket": "疾病"
+    },
+    {
+      "index": 3,
+      "input": "宝宝好几天没拉大便，拉出来又干又硬",
+      "expected_output": "便秘/膳食纤维/就医",
+      "bucket": "疾病"
+    },
+    {
+      "index": 4,
+      "input": "男宝宝阴囊里摸不到蛋蛋，需要处理吗",
+      "expected_output": "隐睾/就医/手术",
+      "bucket": "疾病"
+    },
+    {
+      "index": 5,
+      "input": "宝宝反复发烧找不到原因，会是尿路感染吗",
+      "expected_output": "尿路感染/尿常规/就医",
+      "bucket": "疾病"
+    },
+    {
+      "index": 6,
+      "input": "宝宝嘴里长了溃疡，吃东西就哭",
+      "expected_output": "口腔溃疡/清淡/就医",
+      "bucket": "疾病"
+    },
+    {
+      "index": 7,
+      "input": "孩子被果冻卡住说不出话，怎么急救",
+      "expected_output": "异物/急救/就医",
+      "bucket": "日常护理"
+    },
+    {
+      "index": 8,
+      "input": "夏天宝宝在户外玩太久，脸红不出汗，是中暑吗",
+      "expected_output": "中暑/降温/就医",
+      "bucket": "日常护理"
+    },
+    {
+      "index": 9,
+      "input": "孩子摔了一跤把门牙磕断了，怎么办",
+      "expected_output": "乳牙/就医/保存",
+      "bucket": "日常护理"
+    },
+    {
+      "index": 10,
+      "input": "宝宝脖子褶皱处一片小红点，是痱子吗",
+      "expected_output": "痱子/凉爽/炉甘石",
+      "bucket": "日常护理"
+    },
+    {
+      "index": 11,
+      "input": "宝宝多大可以睡枕头",
+      "expected_output": "枕头/一岁后/窒息",
+      "bucket": "日常护理"
+    },
+    {
+      "index": 12,
+      "input": "宝宝六个月加辅食，第一口吃什么",
+      "expected_output": "强化铁米粉/逐一添加/过敏",
+      "bucket": "喂养"
+    },
+    {
+      "index": 13,
+      "input": "一岁宝宝每天喝多少奶合适",
+      "expected_output": "500毫升/三餐/过量",
+      "bucket": "喂养"
+    },
+    {
+      "index": 14,
+      "input": "母乳挤出来放冰箱能存多久",
+      "expected_output": "冷藏/冷冻/解冻",
+      "bucket": "喂养"
+    },
+    {
+      "index": 15,
+      "input": "宝宝湿疹反复，激素药膏能用吗",
+      "expected_output": "保湿/弱效激素/就医",
+      "bucket": "喂养"
+    },
+    {
+      "index": 16,
+      "input": "什么时候给宝宝断奶比较合适",
+      "expected_output": "断奶/辅食/循序渐进",
+      "bucket": "喂养"
+    },
+    {
+      "index": 17,
+      "input": "五岁孩子晚上还尿床，正常吗",
+      "expected_output": "遗尿/就医/睡前少喝水",
+      "bucket": "发育"
+    },
+    {
+      "index": 18,
+      "input": "孩子总说腿疼，尤其晚上，是生长痛吗",
+      "expected_output": "生长痛/按摩/就医",
+      "bucket": "骨科"
+    },
+    {
+      "index": 19,
+      "input": "宝宝走路内八字，需要矫正吗",
+      "expected_output": "内八字/观察/就医",
+      "bucket": "骨科"
+    },
+    {
+      "index": 20,
+      "input": "宝宝头总歪向一边，是斜颈吗",
+      "expected_output": "斜颈/按摩/就医",
+      "bucket": "骨科"
+    },
+    {
+      "index": 21,
+      "input": "怎么规划一次欧洲旅行",
+      "expected_output": "无法回答/超出育儿范围",
+      "bucket": "库外"
+    },
+    {
+      "index": 22,
+      "input": "推荐一款性价比高的相机",
+      "expected_output": "无法回答/超出育儿范围",
+      "bucket": "库外"
+    },
+    {
+      "index": 23,
+      "input": "如何准备公务员考试",
+      "expected_output": "无法回答/超出育儿范围",
+      "bucket": "库外"
+    },
+    {
+      "index": 24,
+      "input": "怎么考驾照",
+      "expected_output": "无法回答/超出育儿范围",
+      "bucket": "库外"
+    },
+    {
+      "index": 25,
+      "input": "怎么做短视频剪辑",
+      "expected_output": "无法回答/超出育儿范围",
+      "bucket": "库外"
+    }
+  ]
+}
