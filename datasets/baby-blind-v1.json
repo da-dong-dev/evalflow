@@ -1,0 +1,173 @@
+{
+  "name": "baby-ai 盲测 v1",
+  "description": "27 条新写题目，避开 24 条调参题与 v3 的 19 条，用于估计泛化能力；只跑一次，不据此调参。",
+  "source": "参考 scripts/儿科5-14000.csv 主题后手写，expected_output 为标准育儿要点",
+  "exported_at": "2026-11-26",
+  "dataset_hash": "d8c9c7c38618f05d4f8249f06f66543a",
+  "item_count": 27,
+  "hash_note": "hash 覆盖 (input, expected_output, bucket)，与 backend.snapshot.content_hash 一致",
+  "items": [
+    {
+      "index": 1,
+      "input": "孩子体重超标，怎么调整饮食和运动",
+      "expected_output": "控制高热量/有氧运动/就医",
+      "bucket": "喂养"
+    },
+    {
+      "index": 2,
+      "input": "宝宝挑食偏食，需要补什么",
+      "expected_output": "均衡饮食/铁锌/就医",
+      "bucket": "喂养"
+    },
+    {
+      "index": 3,
+      "input": "宝宝贫血是缺什么",
+      "expected_output": "缺铁/补铁/维生素C",
+      "bucket": "喂养"
+    },
+    {
+      "index": 4,
+      "input": "宝宝需要常规补钙吗",
+      "expected_output": "不缺不补/食物/维生素D",
+      "bucket": "喂养"
+    },
+    {
+      "index": 5,
+      "input": "孩子中耳炎耳朵疼怎么办",
+      "expected_output": "就医/抗生素/止痛",
+      "bucket": "耳鼻喉"
+    },
+    {
+      "index": 6,
+      "input": "孩子睡觉打呼噜、张口呼吸怎么办",
+      "expected_output": "腺样体/扁桃体/就医",
+      "bucket": "耳鼻喉"
+    },
+    {
+      "index": 7,
+      "input": "宝宝过敏性鼻炎怎么护理",
+      "expected_output": "盐水洗鼻/避开过敏原/就医",
+      "bucket": "耳鼻喉"
+    },
+    {
+      "index": 8,
+      "input": "孩子眼皮长包能挤吗",
+      "expected_output": "不能挤/热敷/就医",
+      "bucket": "眼科"
+    },
+    {
+      "index": 9,
+      "input": "宝宝近视怎么预防",
+      "expected_output": "户外/少屏幕/定期检查",
+      "bucket": "眼科"
+    },
+    {
+      "index": 10,
+      "input": "宝宝O型腿需要补什么",
+      "expected_output": "维生素D/钙/就医评估",
+      "bucket": "骨科"
+    },
+    {
+      "index": 11,
+      "input": "男宝宝包皮垢怎么清理",
+      "expected_output": "温水清洗/轻柔/就医",
+      "bucket": "外科"
+    },
+    {
+      "index": 12,
+      "input": "两岁宝宝口吃怎么办",
+      "expected_output": "不责备/放慢/就医",
+      "bucket": "发育"
+    },
+    {
+      "index": 13,
+      "input": "孩子咬指甲怎么纠正",
+      "expected_output": "不责骂/转移注意/修剪",
+      "bucket": "发育"
+    },
+    {
+      "index": 14,
+      "input": "宝宝上幼儿园分离焦虑怎么办",
+      "expected_output": "安全感/简短告别/坚持送",
+      "bucket": "发育"
+    },
+    {
+      "index": 15,
+      "input": "孩子在幼儿园打人怎么引导",
+      "expected_output": "平和/教表达/家校沟通",
+      "bucket": "发育"
+    },
+    {
+      "index": 16,
+      "input": "乳牙没掉恒牙长出来怎么办",
+      "expected_output": "就医/拔除",
+      "bucket": "日常护理"
+    },
+    {
+      "index": 17,
+      "input": "宝宝地图舌需要治疗吗",
+      "expected_output": "均衡饮食/维生素B/锌",
+      "bucket": "皮肤"
+    },
+    {
+      "index": 18,
+      "input": "宝宝鼻出血怎么止血",
+      "expected_output": "低头/捏鼻翼/就医",
+      "bucket": "日常护理"
+    },
+    {
+      "index": 19,
+      "input": "猩红热是怎么传播的",
+      "expected_output": "链球菌/飞沫/就医",
+      "bucket": "疾病"
+    },
+    {
+      "index": 20,
+      "input": "幼儿急疹出疹后怎么护理",
+      "expected_output": "热退疹出/多喝水/无需特殊",
+      "bucket": "疾病"
+    },
+    {
+      "index": 21,
+      "input": "手足口病怎么护理",
+      "expected_output": "就医/隔离/清淡饮食",
+      "bucket": "疾病"
+    },
+    {
+      "index": 22,
+      "input": "水痘需要隔离多久",
+      "expected_output": "隔离/就医/避免抓挠",
+      "bucket": "疾病"
+    },
+    {
+      "index": 23,
+      "input": "如何提高英语口语",
+      "expected_output": "无法回答/超出育儿范围",
+      "bucket": "库外"
+    },
+    {
+      "index": 24,
+      "input": "推荐一个健身计划",
+      "expected_output": "无法回答/超出育儿范围",
+      "bucket": "库外"
+    },
+    {
+      "index": 25,
+      "input": "红烧肉怎么做",
+      "expected_output": "无法回答/超出育儿范围",
+      "bucket": "库外"
+    },
+    {
+      "index": 26,
+      "input": "买什么手机比较好",
+      "expected_output": "无法回答/超出育儿范围",
+      "bucket": "库外"
+    },
+    {
+      "index": 27,
+      "input": "怎么申请护照",
+      "expected_output": "无法回答/超出育儿范围",
+      "bucket": "库外"
+    }
+  ]
+}
